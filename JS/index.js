@@ -30,7 +30,7 @@ btnEle.addEventListener("click", function(event) {
         document.getElementById("average").innerHTML = "";
     } else {
         let totalMarks = subject1 + subject2 + subject3 + subject4 + subject5;
-        let possibleMarks = 100;
+        let possibleMarks = 500;
         let percentage = (totalMarks / possibleMarks) * 100;
 
         document.getElementById("total").innerHTML = totalMarks;
@@ -43,7 +43,8 @@ btnEle.addEventListener("click", function(event) {
             document.getElementById("grade").innerHTML = "C";
         } else if (percentage >= 60 && percentage <= 69) {
             document.getElementById("grade").innerHTML = "D";
-        } else
+        } else {
             document.getElementById("grade").innerHTML = "F";
+        }
     }
 })
